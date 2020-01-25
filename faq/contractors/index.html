@@ -2444,7 +2444,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                         <div class="block-btn gc-wide-8 gc-ml-wide-1 gc-8 gc-ml-1 gc-tablet-8 gc-ml-tablet-1 gc-mobile-3 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="0.4s">
-                            <div class="header-buttons"><button class="btn btn-small-bg small-green open-contact-popup tag-contact-us">Contact us</button><button class="btn btn-small-bg small-red open-free-estimate-popup tag-estimate">Free Estimate</button></div>
+                            <div class="header-buttons"><button class="btn btn-small-bg small-green contact-popup tag-contact-us">Contact us</button><button class="btn btn-small-bg small-red estimate-btn tag-estimate">Free Estimate</button></div>
                             <div class="phone-header"><a href="tel:+17209387663"><span>720-938-7663</span></a></div>
                         </div>
                         <div class="gc-wide-1 gc-1 gc-tablet-1 gc-mobile-1">
@@ -2564,7 +2564,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="section-inner">
                                         <h2 class="title-h2">Contact Us Today</h2>
                                         <div class="description">We’re easy to talk to for all inquiries, questions, or comments. Don’t hesitate to reach out with the buttons below or call us</div><a href="tel:7209387663" class="phone">720-938-7663</a>
-                                        <div class="btn-wrapper"><button class="btn btn-red open-contact-popup tag-contact-us">Contact us</button></div>
+                                        <div class="btn-wrapper"><button class="btn btn-red contact-popup tag-contact-us">Contact us</button></div>
                                     </div>
                                     <div class="section-image"><img src="../../static/img/home_contactus.svg" class="home-contact" alt="The roof repaired by Denver roofing company"></div>
                                 </div>
@@ -2622,7 +2622,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <a href="https://www.facebook.com/ChipsRoofing/" target="_blank" class="fb"></a>
                                         </div>
                                     </div>
-                                    <div class="buttons-block"><button class="btn-border btn-border-white open-contact-popup tag-contact-us">Contact us</button><button class="btn-border btn-border-white open-free-estimate-popup tag-estimate">Free Estimate</button></div>
+                                    <div class="buttons-block"><button class="btn-border btn-border-white contact-popup tag-contact-us">Contact us</button><button class="btn-border btn-border-white estimate-btn tag-estimate">Free Estimate</button></div>
                                 </div>
                                 <div class="rating-wrapper"><span>Company rating:</span>
                                     <div class="rating" itemscope itemtype="http://schema.org/LocalBusiness"><img itemprop="image" src="../../static/img/favicon/favicon-128x128.png" alt="Chips Roofing"><span itemprop="name">Company rating:</span>
@@ -2671,6 +2671,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="../../static/js_build/std_paged057.js?_=1566976952" charset="utf-8"></script>
     <script src="https://www.google.com/recaptcha/api.js?onload=recaptchaOnloadCallback&amp;hl=en&amp;render=explicit" async defer></script>
     <script src="../../static/polyfills/loader.js" defer async></script>
+
+    <script>
+        // open contact page
+        $('.contact-popup').on('click', function() {
+            window.location = '../../contact.html'
+        })
+
+        // open estimate page
+        $('.estimate-btn').on('click', function() {
+            window.location = '../../estimate.html'
+        })
+    </script>
 </body>
 <!-- Mirrored from chipsroofingllc.com/faq/contractors/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Jan 2020 00:09:45 GMT -->
 
