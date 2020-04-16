@@ -1,0 +1,4 @@
+RewriteEngine On
+
+
+Redirect /index.html http://chipsroofingllc.com/
