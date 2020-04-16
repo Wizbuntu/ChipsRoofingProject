@@ -1,4 +1,9 @@
-RewriteEngine On
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^chipsroofingllc.com/[nc]
+RewriteRule ^(.*)$ http://www.chipsroofingllc.com//$1 [r=301,nc]
 
-
-Redirect http://chipsroofingllc.com/index.html https://chipsroofingllc.com/
+//301 Redirect Old File
+Redirect 301 http://chipsroofingllc.com/index.html http://chipsroofingllc.com/
+ 
