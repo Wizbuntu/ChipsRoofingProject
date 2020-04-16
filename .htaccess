@@ -1,4 +1,4 @@
 RewriteEngine On
 
 
-Redirect /index.html http://chipsroofingllc.com/
+Redirect http://chipsroofingllc.com/index.html https://chipsroofingllc.com/
