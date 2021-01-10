@@ -988,6 +988,26 @@
             z-index: 3;
             vertical-align: top
         }
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        
+        .sticky {
+            position: fixed !important;
+            top: 0 !important;
+            background-color: #032a47;
+            margin-top: 30px !important;
+            margin: auto;
+            padding: 10px !important;
+            display: block !important;
+        }
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        
+        .content {
+            padding: 16px !important;
+        }
+        
+        .sticky+.content {
+            padding-top: 60px !important;
+        }
         
         #content-wrapper {
             display: table-row
@@ -2460,7 +2480,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                         <div class="block-btn gc-wide-8 gc-ml-wide-1 gc-8 gc-ml-1 gc-tablet-8 gc-ml-tablet-1 gc-mobile-3 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="0.4s">
-                            <div class="header-buttons"><button class="btn btn-small-bg small-green contact-popup tag-contact-us">Contact us</button><button class="btn btn-small-bg small-red estimate-btn tag-estimate">Free Estimate</button></div>
+                            <div class="header-buttons"><a href="tel:720-938-7663" class="btn btn-small-bg small-green">Contact us</a><a class="btn btn-small-bg small-red estimate-btn tag-estimate">Free Estimate</a><a href="../examples/index.html" class="btn btn-small-bg small-green">Past Projects</a></div>
                             <div class="phone-header"><a href="tel:+17209387663"><span>720-938-7663</span></a></div>
                         </div>
                         <div class="gc-wide-1 gc-1 gc-tablet-1 gc-mobile-1">
@@ -2572,6 +2592,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <div class="category"><span>roof repairs</span></div>
                                             </a>
                                         </div>
+
+                                        <div class="post post-unit">
+                                            <a class="article-post" href="list-of-some-roofing-options/index.html">
+                                                <article typeof="BlogPosting">
+                                                    <meta property="dateModified" content="2020-01-04T05:25:09.159000-05:00" />
+                                                    <meta property="mainEntityOfPage" typeof="WebPage" content="/blog/list-of-some-roofing-options/" />
+                                                    <div href="list-of-some-roofing-options/index.html" property="image" typeof="ImageObject">
+                                                        <div class="image"><img class="image-post" srcset="/media/blog/preview/list_of_roofing_options.png 350w, /media/blog/preview/list_of_roofing_options.png 240w" src="../media/blog/preview/list_of_roofing_options.png"
+                                                                width="350" height="200" property="url" sizes="100vw" alt=""></div>
+                                                        <meta property="width" content="350" />
+                                                        <meta property="height" content="200" />
+                                                    </div>
+                                                    <header><time datetime="2020-01-02T02:11:00-04:00" class="date" property="datePublished">
+        4th January 2021
+        </time>
+                                                        <div class="title" property="headline">
+                                                            A List Of Some Roofing Options
+                                                        </div>
+                                                        <div class="description" property="articleBody">
+                                                            In this article we shall talk about three major roofing options at your disposal that you can choose from.
+                                                        </div>
+                                                    </header>
+                                                </article>
+                                            </a>
+                                            <a class="category-wr" href="by-tag/roof-repairs/index.html">
+                                                <div class="category"><span>roof repairs</span></div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2670,6 +2718,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "ajax_free_estimate": "/contact/ajax/free_estimate/",
             "ajax_examples": "/examples/ajax/",
             "placeholder_url": "/placeholder/ajax/"
+        }
+    </script>
+    <script>
+        window.onscroll = function() {
+            console.log("function is running")
+            stickyFunction()
+        }
+
+        console.log("Script is running")
+
+        // get navbar area
+        const navbarArea = document.getElementById('mobile-menu-button')
+
+
+        // get offset position of navbar
+        const sticky = navbarArea.offsetTop
+
+
+        // init stickyFunction
+        function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                console.log("Yea")
+                navbarArea.classList.add("sticky")
+                console.log(navbarArea)
+            } else {
+                console.log("Wow")
+                navbarArea.classList.remove("sticky");
+            }
         }
     </script>
     <script type="text/javascript" src="../static/js_build/cored057.js?_=1566976952" charset="utf-8"></script>

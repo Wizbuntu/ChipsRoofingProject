@@ -986,6 +986,26 @@
             z-index: 3;
             vertical-align: top
         }
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        
+        .sticky {
+            position: fixed !important;
+            top: 0 !important;
+            background-color: #032a47;
+            margin-top: 30px !important;
+            margin: auto;
+            padding: 10px !important;
+            display: block !important;
+        }
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        
+        .content {
+            padding: 16px !important;
+        }
+        
+        .sticky+.content {
+            padding-top: 60px !important;
+        }
         
         #content-wrapper {
             display: table-row
@@ -2341,7 +2361,7 @@
                             </div>
                         </div>
                         <div class="block-btn gc-wide-8 gc-ml-wide-1 gc-8 gc-ml-1 gc-tablet-8 gc-ml-tablet-1 gc-mobile-3 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="0.4s">
-                            <div class="header-buttons"><button class="btn btn-small-bg small-green contact-popup tag-contact-us">Contact us</button><button class="btn btn-small-bg small-red tag-estimate estimate-btn">Free Estimate</button></div>
+                            <div class="header-buttons"><a href="tel:720-938-7663" class="btn btn-small-bg small-green">Contact us</a><a class="btn btn-small-bg small-red estimate-btn tag-estimate">Free Estimate</a><a href="../examples/index.html" class="btn btn-small-bg small-green">Past Projects</a></div>
                             <div class="phone-header"><a href="tel:+17209387663"><span>720-938-7663</span></a></div>
                         </div>
                         <div class="gc-wide-1 gc-1 gc-tablet-1 gc-mobile-1">
@@ -2372,7 +2392,7 @@
                         <div class="description-main wow fadeInUp animated" data-wow-delay="1s" data-wow-duration="0.5s">
                             <div class="grid h-title">
                                 <div class="gc-wide-7 gc-ml-wide-3 gc-7 gc-ml-3 gc-tablet-8 gc-ml-tablet-3">
-                                    <div class="text">Are you looking for expert roofing contractors in denver Colorado and surrounding areas? Look no further! Chip’s Roofing & Exteriors offers amazing roofing solutions of all kinds for residential and commercial applications.
+                                    <div class="text">Are you looking for expert roofing contractors in Denver Colorado and surrounding areas? Look no further! Chip’s Roofing & Exteriors offers amazing roofing solutions of all kinds for residential and commercial applications.
                                         <br><br> Since our inception more than 35 years ago, Chip’s Roofing & Exteriors has grown to become one of the most experienced and respected roofing contractors in denver colorado. Our highly-trained and knowledgeable
                                         workforce can handle any issue quickly and efficiently. We understand our clients’ needs and budgets, and we offer free consultations and estimates.
                                     </div>
@@ -2403,6 +2423,8 @@
                         </div>
                     </div>
 
+
+
                     <div class="grid-block">
                         <div class="services-part">
 
@@ -2416,6 +2438,7 @@
 
                             </div>
                         </div>
+
                     </div>
 
 
@@ -2456,8 +2479,39 @@
                             </div>
 
                         </div>
+
+
+                    </div>
+
+
+                    <div id="service-animate" class="grid" style="margin-top: 100px;">
+                        <div class="gc-wide-5 gc-5 gc-tablet-6 gc-mobile-full services-box wow fadeInLeft animated" data-wow-delay="1s" data-wow-duration=".4s">
+                            <div class="title-part">
+                                <h2 class="title-h2" style="color: #2c3035; margin-top: 30px;">Do you need a new Roof?</h2>
+
+                            </div>
+                            <div class="header-buttons"><a class="btn btn-small-bg small-red estimate-btn tag-estimate">Contact Us Today</a></div>
+                        </div>
+                        <div class="gc-wide-5 gc-5 gc-tablet-6 gc-mobile-full services-box wow fadeInRight animated" data-wow-delay="1s" data-wow-duration=".4s">
+                            <div class="img">
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8Cv23EANcq8?modestbranding=1&showinfo=0&autohide=2&autoplay=1&mute=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write;"></iframe>
+
+                                <!-- <div class="cf-20631-area-62893"></div> -->
+                                <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                                <div class="elfsight-app-f71f2a29-f1e8-46c6-9b3b-e1b6560689ca"></div> -->
+
+                            </div>
+                            <!-- <img class="section-image slogan-image lozad" data-src="media/services_block/img/image_4.normal.jpg" alt="Services Chip’s Roofing &amp; Exteriors, LLC" srcset="/media/services_block/img/image_4.normal.jpg 480w, " sizes="(min-width: 1024px) 480, (min-width: 768px) 480"> -->
+
+                        </div>
                     </div>
                 </div>
+
+                <div class="grid-block">
+
+                </div>
+
                 <div class="wow fadeInLeft animated" data-wow-delay=".8s" data-wow-duration="1s">
                     <div id="icons" class="icons-wr">
                         <div class="background-block"></div>
@@ -2488,13 +2542,15 @@
                         <div class="shadow-block"><img class="estimate-bg lozad" data-src="media/blocks/estimate/image_3.normal.jpg" alt="Get a Free Estimate" srcset="/media/blocks/estimate/image_3.normal.jpg 1090w, /media/blocks/estimate/image_3.tablet.jpg 600w, /media/blocks/estimate/image_3.mobile.jpg 290w"
                                 sizes="(min-width: 1024px) 1090px, (min-width: 768px) 600px (min-width: 480px) 290px"></div>
                         <div class="grid">
-                            <div class="widthBlock gc-wide-10 gc-11 gc-tablet-11 gc-mobile-full">
+                            <div class="widthBlock gc-wide-5 gc-5 gc-tablet-5 gc-mobile-full">
                                 <h2 class="title-h2">Get a Free Estimate</h2>
                                 <div class="description">Chip’s Roofing &amp; Exteriors provides a FREE estimate for your roof repair or installation, as well as for gutter, siding, and window painting services in Denver, CO. Don’t hesitate to contact our local roofers today
                                     to see what we can do for you!</div>
                                 <div class="btn-wrapper"><button class="btn btn-red tag-estimate estimate-btn">FREE ESTIMATE</button></div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
                 <div class="testimonials-bg">
@@ -2705,6 +2761,36 @@
             "ajax_free_estimate ": "/contact/ajax/free_estimate/ ",
             "ajax_examples ": "/examples/ajax/ ",
             "placeholder_url ": "/placeholder/ajax/ "
+        }
+    </script>
+
+
+    <script>
+        window.onscroll = function() {
+            console.log("function is running")
+            stickyFunction()
+        }
+
+        console.log("Script is running")
+
+        // get navbar area
+        const navbarArea = document.getElementById('mobile-menu-button')
+
+
+        // get offset position of navbar
+        const sticky = navbarArea.offsetTop
+
+
+        // init stickyFunction
+        function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                console.log("Yea")
+                navbarArea.classList.add("sticky")
+                console.log(navbarArea)
+            } else {
+                console.log("Wow")
+                navbarArea.classList.remove("sticky");
+            }
         }
     </script>
 

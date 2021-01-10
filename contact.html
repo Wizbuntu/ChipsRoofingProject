@@ -974,6 +974,26 @@
             z-index: 3;
             vertical-align: top
         }
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        
+        .sticky {
+            position: fixed !important;
+            top: 0 !important;
+            background-color: #032a47;
+            margin-top: 30px !important;
+            margin: auto;
+            padding: 10px !important;
+            display: block !important;
+        }
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        
+        .content {
+            padding: 16px !important;
+        }
+        
+        .sticky+.content {
+            padding-top: 60px !important;
+        }
         
         #content-wrapper {
             display: table-row
